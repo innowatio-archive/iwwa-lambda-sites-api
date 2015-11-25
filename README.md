@@ -1,5 +1,4 @@
 [![Build Status](https://travis-ci.org/innowatio/iwwa-lambda-sites-api.svg?branch=master)](https://travis-ci.org/innowatio/iwwa-lambda-sites-api)
-[![Coverage Status](https://coveralls.io/repos/innowatio/iwwa-lambda-sites-api/badge.svg?branch=master&service=github)](https://coveralls.io/github/innowatio/iwwa-lambda-sites-api?branch=master)
 [![Dependency Status](https://david-dm.org/innowatio/iwwa-lambda-sites-api.svg)](https://david-dm.org/innowatio/iwwa-lambda-sites-api)
 [![devDependency Status](https://david-dm.org/innowatio/iwwa-lambda-sites-api/dev-status.svg)](https://david-dm.org/innowatio/iwwa-lambda-sites-api#info=devDependencies)
 
