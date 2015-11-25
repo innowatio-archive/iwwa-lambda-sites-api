@@ -2,13 +2,10 @@ export default {
     "$schema": "http://json-schema.org/draft-04/schema#",
     "type": "object",
     "properties": {
-        "siteId": {
+        "id": {
             "type": "string"
         },
         "name": {
-            "type": "string"
-        },
-        "location": {
             "type": "string"
         },
         "sensors": {
@@ -19,22 +16,27 @@ export default {
         }
     },
     "required": [
-        "siteId",
+        "id",
         "name",
-        "location",
         "sensors"
     ],
     "definitions": {
         "sensor": {
             "type": "object",
             "properties": {
-                "sensorId": {
+                "id": {
                     "type": "string"
                 },
                 "type": {
                     "type": "string"
                 },
                 "description": {
+                    "type": "string"
+                },
+                "virtual": {
+                    "type": "boolean"
+                },
+                "formula": {
                     "type": "string"
                 },
                 "children": {
@@ -45,7 +47,7 @@ export default {
                 }
             },
             "required": [
-                "sensorId",
+                "id",
                 "type"
             ]
         }
