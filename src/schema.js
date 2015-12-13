@@ -8,13 +8,7 @@ export default {
         "name": {
             "type": "string"
         },
-        "pods": {
-            "type": "array",
-            "items": {
-                "$ref": "#/definitions/pod"
-            }
-        },
-        "otherSensors": {
+        "sensors": {
             "type": "array",
             "items": {
                 "$ref": "#/definitions/sensor"
@@ -24,36 +18,9 @@ export default {
     "required": [
         "id",
         "name",
-        "pods",
-        "otherSensors"
+        "sensors"
     ],
     "definitions": {
-        "pod": {
-            "type": "object",
-            "properties": {
-                "id": {
-                    "type": "string"
-                },
-                "description": {
-                    "type": "string"
-                },
-                "virtual": {
-                    "type": "boolean"
-                },
-                "formula": {
-                    "type": "string"
-                },
-                "children": {
-                    "type": "array",
-                    "items": {
-                        "$ref": "#/definitions/sensor"
-                    }
-                }
-            },
-            "required": [
-                "id"
-            ]
-        },
         "sensor": {
             "type": "object",
             "properties": {
